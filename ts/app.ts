@@ -14,7 +14,7 @@ class MyAppComponent {
   name: string;
 
   constructor() {
-    this.name = 'Bob';
+    this.name = 'Bill Gates';
   }
 }
 
