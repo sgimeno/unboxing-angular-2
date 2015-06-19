@@ -1,45 +1,47 @@
-Unboxing Angular 2: TypeScript
-==============================
+Angular2 Component written in ES5/ES6/TS
+========================================
 
-1. Create a project
+  Just a simple demo of writting angular2 components in available language options. (Dart comming soon!)
 
- + [DefinetlyTyped](http://definitelytyped.org/)
- + TSD(https://github.com/DefinitelyTyped/tsd)
+##Requirements
+
+ + [NodeJS](https://nodejs.org/)
+
+
+##Setup
 
 ```
-$ npm install -g tsd
+$ make install
+```
+or alternatively
+
+```
+$ npm install -g babel typescript@^1.5.0-beta tsd browserify
 $ tsd query angular2 --action install --save
-//will write down the dependency version/commit in tsd.json
+$ mv typings ts/typings
 ```
 
-```
-$ touch app.ts index.html
-```
-
-
-
-2. Run the TypeScript compiler
-
-Since the browser doesn't understand TypeScript code, we need to run a compiler to translate your code to browser-compliant JavaScript as you work. This quickstart uses the TypeScript compiler in --watch mode, but it is also possible to do the translation in the browser as files are loaded, or configure your editor or IDE to do it.
+### Build demo
 
 ```
-$ npm install -g typescript@^1.5.0-beta
-$ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata app.ts
+$ make <es5|es6|ts>
 ```
 
+##Notes on the code
 
+ + In the ES5 example I'm using browserify to require angular2 as a node module
+ + In the ES6 example I'm using babel to enable the use of ES7 deocorators syntax
+ + In the TS example we are using the `--emitDecoratorMetadata` argument to compile for the same reason
 
-45min later you are ready to do what?
+## References
 
-TDLR:
- :)
- + You can write your app in ES5, ES6 or TypeScript
-    + [Uhm, but decoratrors are not part of ES5 or ES6, they are in ES7 proposal stage 1!](http://stackoverflow.com/questions/30217510/is-the-angular-2-component-syntax-part-of-es6)
+### Typescript
 
- + Optional typing sounds awesome
- + OOP sound awesome to some people
- :(
- + Dealing with generated files is always a mess
- + Yet another dependency manager to deal with and tsd.json file to annotate versions
- :|
- + TypeScript is gonna be the reference language
++ [DefinetlyTyped](http://definitelytyped.org/)
++ [TSD](https://github.com/DefinitelyTyped/tsd)
+
+### ES6
++ [Babel](https://babeljs.io)
+
+### ES5
++ [browserify](http://browserify.org)

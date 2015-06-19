@@ -3,6 +3,7 @@
 clean:
 	rm es6/app.js
 	rm ts/app.js
+	rm es5/bundle.js
 
 install:
 	npm install -g babel typescript@^1.5.0-beta tsd browserify
