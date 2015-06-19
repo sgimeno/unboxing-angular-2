@@ -34,10 +34,12 @@ $ tsc --watch -m commonjs -t es5 --emitDecoratorMetadata app.ts
 TDLR:
  :)
  + You can write your app in ES5, ES6 or TypeScript
+    + [Uhm, but decoratrors are not part of ES5 or ES6, they are in ES7 proposal stage 1!](http://stackoverflow.com/questions/30217510/is-the-angular-2-component-syntax-part-of-es6)
+
  + Optional typing sounds awesome
  + OOP sound awesome to some people
  :(
  + Dealing with generated files is always a mess
  + Yet another dependency manager to deal with and tsd.json file to annotate versions
  :|
- + TypeScript is gonna be the reference language 
+ + TypeScript is gonna be the reference language
