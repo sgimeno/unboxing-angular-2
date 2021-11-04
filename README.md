@@ -3,12 +3,12 @@ Angular2 Component written in ES5/ES6/TS
 
   Just a simple demo of writting angular2 components in available language options. (Dart comming soon!)
 
-##Requirements
+## Requirements
 
  + [NodeJS](https://nodejs.org/)
 
 
-##Setup
+## Setup
 
 ```
 $ make install
@@ -27,7 +27,7 @@ $ mv typings ts/typings
 $ make <es5|es6|ts>
 ```
 
-##Notes on the code
+## Notes on the code
 
  + In the ES5 example I'm using browserify to require angular2 as a node module
  + In the ES6 example I'm using babel to enable the use of ES7 deocorators syntax
